@@ -1,0 +1,11 @@
+# Ignore everything by default
+*
+
+# Track only markdown docs
+!*.md
+!.gitignore
+!README.md
+
+# Never track these even if .md extension
+!NTUSER*
+NTUSER*
