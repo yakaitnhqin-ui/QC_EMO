@@ -1,11 +1,31 @@
 # Ignore everything by default
 *
 
-# Track only markdown docs
-!*.md
-!.gitignore
-!README.md
+# Allow directories to be traversed (needed for subdirectory tracking)
+!*/
 
-# Never track these even if .md extension
-!NTUSER*
-NTUSER*
+# Track root-level markdown files
+!/*.md
+!/.gitignore
+
+# Track Claude memory files (for WFH context sync)
+!/.claude/
+!/.claude/projects/
+!/.claude/projects/C--Users-nhu-huynh/
+!/.claude/projects/C--Users-nhu-huynh/memory/
+!/.claude/projects/C--Users-nhu-huynh/memory/*.md
+
+# Explicitly block large/system directories even if matched above
+AppData/**
+.antigravity/**
+.antigravity-ide/**
+.gemini/**
+.cache/**
+.cursor/**
+.copilot/**
+.vscode/**
+.vscode-shared/**
+Downloads/**
+Documents/**
+Desktop/**
+3D Objects/**

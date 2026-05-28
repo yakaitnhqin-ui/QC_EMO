@@ -1,0 +1,2 @@
+- [User role](user_role.md) — Nhu Huynh, Account Manager at S3Corp, works on EP/Eskimo Portals project, prefers Vietnamese
+- [Jira workspace](reference_jira.md) — eskimo-portal.atlassian.net cloudId and EP project key for MCP calls
